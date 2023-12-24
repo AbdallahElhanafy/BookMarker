@@ -1,0 +1,56 @@
+body {
+    background-color: white !important;
+}
+
+.header {
+    position: relative !important;
+    display: flex;
+
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container .header :after{
+    content: '';
+    position: absolute;
+    display: block;
+
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.header:hover :after{
+
+height: 50%;
+}
+
+@keyframes height {
+    0%{
+        height: 25%;
+    }
+    100%{
+        height: 50%;
+    }
+}
+
+.bookmark-section , .bookmark-table {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.bookmark-section input{
+    margin: 20px 0 20px 0;
+}
+
+.bookmark-section{
+
+
+    border-style: dotted;
+    border-color: black;
+    border-width: 3px 0 3px 0;
+}
+
